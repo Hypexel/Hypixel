@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hypexel Website</title>
+	<style>
+		.header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+			border-bottom: 1px solid #ccc;
+		}
+		.logo {
+			font-size: 32px;
+			font-weight: bold;
+		}
+		.play-now {
+			font-size: 24px;
+			font-weight: bold;
+			margin: 20px 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-top: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			padding: 20px 0;
+		}
+		.play-now-text {
+			margin: 0 10px;
+		}
+		.navigation {
+			display: flex;
+			align-items: center;
+			padding: 10px;
+			border-bottom: 1px solid #ccc;
+		}
+		.navigation a {
+			margin-right: 20px;
+			text-decoration: none;
+			color: #333;
+			font-weight: bold;
+		}
+		.navigation a:last-child {
+			margin-right: 0;
+		}
+		.navigation a:hover {
+			color: #666;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">Hypexel</div>
+		<div class="auth">
+			<a href="#">Login</a>
+			<a href="#">Register</a>
+		</div>
+	</div>
+	<div class="play-now">
+		<div class="play-now-text">PLAY NOW</div>
+		<div class="server-ip" onclick="copyServerIp()">SERVER IP » MC.HYPEXEL.TK</div>
+	</div>
+	<div class="navigation">
+		<div class="menu">
+			<a href="#">HOME</a>
+			<a href="https://hypexel.github.io/Hypixel/games" target="_blank">GAMES</a>
+			<a href="https://hypexel.github.io/Hypixel/" target="_blank">LEADERBOARDS</a>
+		</div>
+	</div>
+	<script>
+		function copyServerIp() {
+			var serverIp = "MC.HYPEXEL.TK";
+			navigator.clipboard.writeText(serverIp);
+			alert("Server IP copied to clipboard: " + serverIp);
+		}
+	</script>
+</body>
+</html>
